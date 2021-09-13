@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "creation": "2021-09-13 14:08:27.110253",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "representante",
+  "hijos",
+  "precio_unitario",
+  "valor_pagar",
+  "descuento",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "representante",
+   "fieldtype": "Link",
+   "label": "Representante",
+   "options": "Representante"
+  },
+  {
+   "fieldname": "hijos",
+   "fieldtype": "Int",
+   "label": "Hijos"
+  },
+  {
+   "default": "60.50",
+   "fieldname": "precio_unitario",
+   "fieldtype": "Currency",
+   "label": "Precio Unitario",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "valor_pagar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Valor a Pagar"
+  },
+  {
+   "fieldname": "descuento",
+   "fieldtype": "Data",
+   "label": "Descuento (%)"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-13 15:06:26.499030",
+ "modified_by": "Administrator",
+ "module": "app",
+ "name": "Factura",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
